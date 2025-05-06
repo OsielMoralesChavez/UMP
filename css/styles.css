@@ -1,0 +1,77 @@
+/* Tipografía y base */
+body {
+    background: #0c0b4d;
+    color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Títulos principales */
+  h1, h4 {
+    color: #ffc107;
+    font-weight: bold;
+  }
+  
+  /* Estilo del acordeón */
+  .accordion-button {
+    background-color: #ffffff10;
+    color: #2c2b2b;
+    font-weight: 600;
+    backdrop-filter: blur(2px);
+    border: 1px solid #ffffff30;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: #ffc107;
+    color: #070663;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+    border-color: #ffc107;
+  }
+  
+  /* Cuerpo del acordeón */
+  .accordion-body {
+    background-color: #ffffff0a;
+    border-top: 1px solid #ffffff30;
+    padding: 1rem 1.5rem;
+    border-radius: 0 0 8px 8px;
+    color: #132042;
+  }
+  
+  /* Lista de contenidos */
+  ul li {
+    margin-bottom: 0.6rem;
+  }
+  
+  ul li strong {
+    color: #ffc107;
+  }
+  
+  /* Imagen */
+  .img-fluid {
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Datos del curso */
+  .mt-5 ul li {
+    color: #dee2e6;
+  }
+  
+  /* Contenedor */
+
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .container {
+      padding: 1.5rem;
+    }
+  }
+  
