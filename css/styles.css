@@ -1,18 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Russo+One&family=Teko:wght@300..700&family=Tektur:wght@400..900&display=swap');
+
+
 /* Tipografía y base */
 body {
-    background: #0c0b4d;
-    color: #f8f9fa;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-  }
+  background: linear-gradient(0deg, rgba(9, 33, 71, 0.3), rgba(9, 33, 71, 0.3)), url(../img/fondo1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* opcional: hace que el fondo se mantenga fijo al hacer scroll */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* asegura que el fondo cubra toda la altura de la ventana */
+}
+
   
   /* Títulos principales */
   h1, h4 {
-    color: #ffc107;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
     font-weight: bold;
   }
   
   /* Estilo del acordeón */
+
   .accordion-button {
     background-color: #ffffff10;
     color: #2c2b2b;
@@ -23,13 +36,13 @@ body {
   }
   
   .accordion-button:not(.collapsed) {
-    background-color: #ffc107;
-    color: #070663;
+    background-color: #1a488e;
+    color: #fbfbfb;
   }
   
   .accordion-button:focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
-    border-color: #ffc107;
+    box-shadow: 0 0 0 0.2rem rgba(7, 36, 255, 0.5);
+    border-color: #070663;
   }
   
   /* Cuerpo del acordeón */
@@ -47,7 +60,8 @@ body {
   }
   
   ul li strong {
-    color: #ffc107;
+    color: #9fa0a3;
+    font-weight: bold;
   }
   
   /* Imagen */
@@ -61,8 +75,31 @@ body {
     color: #dee2e6;
   }
   
-  /* Contenedor */
+  /* Boton */
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
 
+.shadow__btn {
+  background: rgb(0,140,255);
+  box-shadow: 0 0 25px rgb(0,140,255);
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
+}
   
   /* Responsive */
   @media (max-width: 768px) {
